@@ -185,6 +185,45 @@ span{
 
   .content{
     flex: 1 1 42rem;
+
+    span{
+      font-size: 2rem;
+      color: $red;
+    }
+     
+    .title{
+      font-size: 4rem;
+      color: $white;
+      margin-top: .5rem;
+    }
+
+    p{
+      font-size: 1.5rem;
+      color: $light-white;
+      padding: 1rem 0;
+      line-height: 2;
+    }
+
+    .box-container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1rem;
+
+      .box{
+        flex: 1 1 20rem;
+
+        h3{
+          font-size: 2rem;
+          color: $white;
+
+          i{
+            padding-right: 1.5rem;
+            color: $red;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -248,6 +287,19 @@ padding: 2rem 5%;
       font-size: 2rem;
     }
   }
+}
+
+.about{
+  gap: 3rem;
+
+  .image{
+    margin-top: 5rem;
+  }
+
+  .content .title{
+    font-size: 3rem;
+  }
+    
 }
 
 
