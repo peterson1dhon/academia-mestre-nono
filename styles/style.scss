@@ -266,6 +266,11 @@ span{
   .box{
     background: $light-bg;
 
+    &.second{
+      display: flex;
+      flex-flow: column-reverse;
+    }
+
     &:hover .image img{
       transform: scale(1.1);
     }
@@ -281,10 +286,107 @@ span{
         object-fit: cover;
       }
     }
+
+    .content{
+      padding: 2rem;
+      text-align: center;
+
+      img{
+        height: 9rem;
+        margin-bottom: 1rem;
+        filter: invert(1);
+      }
+
+      h3{
+        font-size: 2rem;
+        color: $red;
+      }
+
+      p{
+        line-height: 2;
+        font-size: 1.5rem;
+        color: $light-white;
+        padding: 1rem 0;
+      }
+    }
   }
 
 }
+
+.pricing{
+  @include grid(32rem);
+
+  .information{
+
+    span{
+      font-size: 2rem;
+      color: $red;
+    }
+
+    h3{
+      font-size: 4rem;
+      padding: .5rem;
+      color: $white;
+    }
+
+    p{
+      line-height: 2;
+      padding: 1rem 0;
+      font-size: 1.4rem;
+      color: $light-white;
+
+      i{
+        padding-right: 1rem;
+        color: $red;
+      }
+    }
       
+      
+  }
+
+  .plan{
+    text-align: center;
+    padding: 2rem;
+
+    h3{
+      font-size: 2.5rem;
+      margin: 1rem 0;
+      color: $white;
+    }
+
+    .price{
+      font-size: 5rem;
+      font-weight: bolder;
+      color: $red;
+
+      span{
+        color: $white;
+        font-size: 2rem;
+      }
+    }
+
+    .list{
+      padding: 1rem 0;
+
+      p{
+        line-height: 2;
+        padding: 1rem 0;
+        font-size: 1.4rem;
+        color: $light-white;
+  
+        i{
+          padding-right: 1rem;
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+      
+      
+
+        
 
 
 
@@ -346,20 +448,24 @@ padding: 2rem 5%;
       font-size: 2rem;
     }
   }
+  .about{
+    gap: 3rem;
+
+    .image{
+      margin-top: 5rem;
+    }
+
+    .content .title{
+      font-size: 3rem;
+    }
+      
+  }  
+  .features .box-container .box.second{
+    flex-flow: column;
+  }
 }
-
-.about{
-  gap: 3rem;
-
-  .image{
-    margin-top: 5rem;
-  }
-
-  .content .title{
-    font-size: 3rem;
-  }
     
-}
+
 
 
 @media (max-width:450px){
