@@ -18,10 +18,21 @@ var swiper = new Swiper(".home-slider", {
   effect: "fade",
   gradCursor: true,
   loop:true,
+  centeredSlide: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+});
+
+var swiper = new Swiper(".home-slider", {
+  spaceBetween: 20,
+  effect: "fade",
+  gradCursor: true,
+  loop:true,
+  centeredSlide: true,
+  autoplay
+
 });
   
 
