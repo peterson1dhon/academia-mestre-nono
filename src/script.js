@@ -18,6 +18,10 @@ var swiper = new Swiper(".home-slider", {
   effect: "fade",
   gradCursor: true,
   loop:true,
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+  },
   centeredSlide: true,
   pagination: {
     el: ".swiper-pagination",
