@@ -32,7 +32,7 @@ var swiper = new Swiper(".review-slider", {
   loop:true,
   // centeredSlide: true,
   autoplay: {
-    delay: 7500,
+    delay: 4500,
     disableOnInteraction: false,
   },
   breakpoints:{
@@ -41,11 +41,38 @@ var swiper = new Swiper(".review-slider", {
     },
     600:{
       slidesPerView: 2,
-    }
+    },
+  },
+});
+
+var swiper = new Swiper(".blogs-slider", {
+  spaceBetween: 20,
+  
+  gradCursor: true,
+  loop:true,
+  // centeredSlide: true,
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints:{
+    0:{
+      slidesPerView: 1,
+    },
+    768:{
+      slidesPerView: 2,
+    },
+    991:{
+      slidesPerView: 3,
+    },
+  },
+});
       
-  }
     
 
-});
   
 

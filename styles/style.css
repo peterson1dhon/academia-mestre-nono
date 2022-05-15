@@ -538,18 +538,18 @@ span {
           flex: 1 1 60rem;
 }
 
-.review .slide {
+.review .review-slider .slide {
   background: linear-gradient(130deg, #111 93%, transparent 90%);
   padding: 2rem 3rem;
 }
 
-.review p {
+.review .review-slider .slide p {
   font-size: 1.5rem;
   line-height: 2;
   color: #aaa;
 }
 
-.review .user {
+.review .review-slider .slide .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,7 +559,7 @@ span {
   margin-top: 1.5rem;
 }
 
-.review .user img {
+.review .review-slider .slide .user img {
   height: 5rem;
   width: 5rem;
   -o-object-fit: cover;
@@ -568,21 +568,79 @@ span {
   margin-right: 1rem;
 }
 
-.review .user h3 {
+.review .review-slider .slide .user h3 {
   font-size: 2rem;
   color: #fff;
 }
 
-.review .user span {
+.review .review-slider .slide .user span {
   color: #f00;
   font-size: 1.5rem;
 }
 
-.review .user i {
+.review .review-slider .slide .user i {
   font-size: 5rem;
   margin-left: auto;
   margin-right: 2rem;
   color: #f00;
+}
+
+.blogs .slide {
+  background: #111;
+  margin-bottom: 7rem;
+}
+
+.blogs .slide:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blogs .slide .image {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blogs .slide .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogs .slide .content {
+  padding: 2rem;
+}
+
+.blogs .slide .content .link {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.blogs .slide .content .link a {
+  color: #f00;
+}
+
+.blogs .slide .content .link a:hover {
+  color: #fff;
+}
+
+.blogs .slide .content .link span {
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.blogs .slide .content h3 {
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.blogs .slide .content p {
+  font-size: 1.5rem;
+  color: #aaa;
+  line-height: 2;
+  padding: 2rem 0;
 }
 
 @media (max-width: 991px) {
