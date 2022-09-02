@@ -544,64 +544,6 @@ span{
     }
 }
 
-.blogs{
-  .slide{
-    background: $light-bg;
-    margin-bottom: 7rem;
-
-    &:hover .image img{
-      transform: scale(1.1); //ativa as animaçoes das imagens
-    }
-
-    .image{
-      height: 25rem;
-      width: 100%;
-      overflow: hidden;
-
-      img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-
-    .content{
-      padding: 2rem;
-
-      .link{
-        padding-bottom: 1rem;
-        font-size: 1.5rem;
-
-        a{
-          color: $red;
-
-          &:hover{
-            color: $white; // animação das letras
-          }
-        }
-
-        span{
-          color: $white;
-          padding: 0 1rem;
-        }
-      }
-
-      h3{
-        font-size: 2rem;
-        color: $white;
-        line-height: 1.5;
-      }
-
-      p{
-        font-size: 1.5rem;
-        color: $light-white;
-        line-height: 2;
-        padding:  2rem 0;
-      }
-    }
-  }
-}
-
       
 .footer{
   .box-container{
@@ -684,20 +626,6 @@ span{
     color: $red;
   }
 }
-
-
-        
-
-    
-      
-
-      
-      
-
-        
-
-
-
 
 // media queries
 
